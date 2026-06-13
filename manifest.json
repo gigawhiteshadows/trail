@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/trainingsplan/",
+  "start_url": "/trail/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#f8f7f4"
