@@ -1,0 +1,20 @@
+{
+  "name": "Mayrhofen Ultraks Trainingsplan",
+  "short_name": "Trainingsplan",
+  "icons": [
+    {
+      "src": "logotrail2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logotrail2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/trainingsplan/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f8f7f4"
+}
