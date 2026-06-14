@@ -7,39 +7,39 @@
 <link rel="manifest" href="manifest.json">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:system-ui,sans-serif;background:#f8f7f4;color:#1a1a1a;padding:16px;}
-.hdr{padding:1.2rem 0 .9rem;border-bottom:1px solid #e0ddd5;margin-bottom:1rem;}
+body{font-family:system-ui,sans-serif;background:#16150f;color:#e8e6df;padding:16px;}
+.hdr{padding:1.2rem 0 .9rem;border-bottom:1px solid #38352c;margin-bottom:1rem;}
 .hdr h1{font-size:18px;font-weight:600;}
-.hdr p{font-size:12px;color:#666;margin-top:3px;}
+.hdr p{font-size:12px;color:#9a978d;margin-top:3px;}
 .zones{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:.8rem;}
 .zc{padding:8px 10px;border-radius:8px;font-size:11px;line-height:1.4;}
 .zc .zl{font-weight:600;font-size:12px;}
 .info{border-radius:8px;padding:10px 14px;margin-bottom:1rem;font-size:11.5px;line-height:1.6;}
 .ctrl{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:.9rem;}
-.cb{padding:5px 12px;font-size:12px;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer;}
-.cb:hover{background:#f0ede6;}
-.cb.act{background:#e8e5dc;border-color:#999;font-weight:600;}
+.cb{padding:5px 12px;font-size:12px;border:1px solid #4a463c;border-radius:8px;background:#23211a;color:#e8e6df;cursor:pointer;}
+.cb:hover{background:#33302a;}
+.cb.act{background:#3a372f;border-color:#7a7568;font-weight:600;}
 .leg{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:1rem;}
-.li{display:flex;align-items:center;gap:4px;font-size:11px;color:#666;}
+.li{display:flex;align-items:center;gap:4px;font-size:11px;color:#9a978d;}
 .ld{width:9px;height:9px;border-radius:2px;}
 .hmbar-title{font-size:12px;font-weight:600;margin-bottom:6px;}
 .hmrow{display:flex;align-items:center;gap:7px;margin-bottom:2px;font-size:10px;}
-.hmlabel{width:80px;color:#555;flex-shrink:0;white-space:nowrap;}
+.hmlabel{width:80px;color:#9a978d;flex-shrink:0;white-space:nowrap;}
 .hmfill{height:11px;border-radius:3px;min-width:2px;}
 .hmval{font-weight:600;width:60px;flex-shrink:0;}
-.wb{border:1px solid #ddd;border-radius:10px;margin-bottom:8px;overflow:hidden;}
-.wh{padding:10px 14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:#f2f0ea;}
-.wh:hover{background:#e8e5dc;}
+.wb{border:1px solid #38352c;border-radius:10px;margin-bottom:8px;overflow:hidden;}
+.wh{padding:10px 14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:#23211a;}
+.wh:hover{background:#33302a;}
 .wt{font-size:13px;font-weight:600;}
-.wm{font-size:11px;color:#555;}
+.wm{font-size:11px;color:#a6a298;}
 .wtag{font-size:10px;padding:2px 7px;border-radius:20px;margin-left:6px;}
-.wa{font-size:11px;color:#999;transition:transform .2s;}
+.wa{font-size:11px;color:#888;transition:transform .2s;}
 .wa.open{transform:rotate(90deg);}
 .wc{display:none;padding:10px 14px;}
 .wc.open{display:block;}
 .ws{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:10px;}
-.sc{background:#f2f0ea;border-radius:6px;padding:7px 9px;}
-.sl{font-size:10px;color:#666;}
+.sc{background:#23211a;border-radius:6px;padding:7px 9px;}
+.sl{font-size:10px;color:#9a978d;}
 .sv{font-size:14px;font-weight:600;margin-top:1px;}
 .dg{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;}
 .dc{border-radius:7px;padding:7px;font-size:10px;min-height:100px;}
@@ -53,7 +53,7 @@ body{font-family:system-ui,sans-serif;background:#f8f7f4;color:#1a1a1a;padding:1
 .dc.checked .dn,.dc.checked .de,.dc.checked .dd{opacity:.45;text-decoration:line-through;text-decoration-color:currentColor;}
 .dc.checked{opacity:.8;}
 .chk-progress{font-size:10px;color:var(--color-text-secondary,#888);margin-top:6px;}
-.prog-bar-wrap{background:rgba(0,0,0,.08);border-radius:3px;height:4px;margin-top:3px;overflow:hidden;}
+.prog-bar-wrap{background:rgba(255,255,255,.1);border-radius:3px;height:4px;margin-top:3px;overflow:hidden;}
 .prog-bar-fill{height:100%;border-radius:3px;transition:width .3s;}
 
 .dn{font-weight:700;font-size:10px;margin-bottom:3px;}
@@ -66,23 +66,23 @@ body{font-family:system-ui,sans-serif;background:#f8f7f4;color:#1a1a1a;padding:1
 <body>
 
 <div class="hdr">
-  <h1>Mayrhofen Ultraks 2026 — Trainingsplan v6</h1>
-  <p>70 km · 4.500 Hm · Wettkampf: Sa 05.09.2026 · Planstart: Mo 13.04.2026 · 22 Wochen · Einheiten abhakbar · Basis: 10k 55 min · HM 1:55h · Zone 2 @ 7:00/km · max HF ~183 bpm</p>
+  <h1>Mayrhofen Ultraks 2026 — Trainingsplan v8</h1>
+  <p>TUX070 · 70 km · ~4.000–4.270 Hm · Start Sa 05.09.2026, 05:30 Uhr Hintertux (Stirnlampe!) → Ziel Mayrhofen · Planstart Mo 13.04.2026 · 21 Wochen · Einheiten abhakbar · Basis: 10k 55 min · HM 1:55h · Zone 2 @ 7:00/km · max HF ~183 bpm · angepasst an 40-h-Job + 1,5 h Anfahrt zu den Bergen</p>
 </div>
 
-<div class="info" style="background:#FAEEDA;color:#4a2800;">
-  <strong>Struktur-Logik v4:</strong> Aufbau 1–6 (13.04.–17.05.) → Pre-Peak inkl. Testläufe 7–13 (18.05.–05.07.) → Peak-Block 14–18 (06.07.–09.08.) mit Camp 01.–03.08. als Herzstück → Taper 19–20 (10.–23.08.) → Race Week 21 (24.08.–05.09.) · Peak-Phase liegt komplett in 25.07.–10.08. · Wöchentliche Hm-Ziele: Aufbau 250–1.500, Intensiv 1.000–2.500, Peak 3.000–5.000+, Taper 500–1.000 · Für 4.500 Hm am Stück brauchst du Einzeltages-Einheiten mit 1.500–2.000+ Hm.
+<div class="info" style="background:#2c2410;color:#e8c98a;">
+  <strong>Struktur-Logik v8 (angepasst):</strong> Aufbau 1–6 → Pre-Peak inkl. Testläufe 7–13 → Cruise/Erhaltung 14–15 (Kreuzfahrt) → Peak/Camp 16–19 mit Camp 01.–03.08. als Herzstück → Taper 20 → Race Week 21 · <strong>Camp = Peak</strong>, danach keine zweite Höchstwoche mehr · Schutzfenster 13.–24.07. von echten Spitzen freigehalten · <strong>Berg/Hügel nur am Wochenende</strong> – Wochentags-Hm über Laufband/Stairmaster · <strong>W10 (20./21.06.):</strong> kein Bergwochenende, Sa 9-km-Flach-Event + So lokaler Hügel-Langlauf (≤1 h, Fränkische Alb) · <strong>W14–15 Kreuzfahrt 13.–25.07.:</strong> Erhaltung, kein Peak, nur Höhenlaufband + Kraftgeräte · Wöchentliche Hm-Ziele: Aufbau 250–1.500, Intensiv 1.000–2.500, Peak/Camp bis ~6.600 (3-Tages-Summe), Taper 400–1.000 · Renn-Hm real ~4.000–4.270 (Plan trainiert bis ~4.500 als Reserve) · Renn-Spezifik: Dunkelstart 05:30 + Stirnlampe, langer Kaltstart-Anstieg, Höhe bis ~2.760 m, technischer Schluss-Downhill.
 </div>
 
 <p style="font-size:12px;font-weight:600;margin-bottom:7px;">Trainingszonen</p>
 <div class="zones">
-  <div class="zc" style="background:#E1F5EE;color:#085041;"><div class="zl">Zone 1</div>HF: bis 137<br>Pace: 8:30–10:00<br>RPE: 3–4</div>
-  <div class="zc" style="background:#EAF3DE;color:#27500A;"><div class="zl">Zone 2</div>HF: 137–155<br>Pace: 7:00–8:30<br>RPE: 5–6</div>
-  <div class="zc" style="background:#FAEEDA;color:#633806;"><div class="zl">Zone 3</div>HF: 155–166<br>Pace: 5:50–7:00<br>RPE: 7–8</div>
-  <div class="zc" style="background:#FAECE7;color:#712B13;"><div class="zl">Zone 4</div>HF: 166–174<br>Pace: 5:00–5:50<br>RPE: 8–9</div>
-  <div class="zc" style="background:#FCEBEB;color:#501313;"><div class="zl">Zone 5</div>HF: >174<br>Pace: <5:00<br>RPE: 10</div>
+  <div class="zc" style="background:#0e2b25;color:#7fd9bf;"><div class="zl">Zone 1</div>HF: bis 137<br>Pace: 8:30–10:00<br>RPE: 3–4</div>
+  <div class="zc" style="background:#1d2b10;color:#b9da8c;"><div class="zl">Zone 2</div>HF: 137–155<br>Pace: 7:00–8:30<br>RPE: 5–6</div>
+  <div class="zc" style="background:#2e2410;color:#e8c277;"><div class="zl">Zone 3</div>HF: 155–166<br>Pace: 5:50–7:00<br>RPE: 7–8</div>
+  <div class="zc" style="background:#2e1a12;color:#e8a07f;"><div class="zl">Zone 4</div>HF: 166–174<br>Pace: 5:00–5:50<br>RPE: 8–9</div>
+  <div class="zc" style="background:#2e1313;color:#e88585;"><div class="zl">Zone 5</div>HF: >174<br>Pace: <5:00<br>RPE: 10</div>
 </div>
-<p style="font-size:10px;color:#666;margin-bottom:1rem;">Berg: NUR nach HF/RPE steuern, nie nach Pace · LB Z2 (12%): 4,5–5,2 km/h · LB Z3 (16%+): 5,5–6,5 km/h · Stairmaster Z2: 60–80 Steps/min · Z3: 80–100 Steps/min · Race Day 1. Anstieg: max 87% HFmax = <strong>159 bpm</strong></p>
+<p style="font-size:10px;color:#9a978d;margin-bottom:1rem;">Berg: NUR nach HF/RPE steuern, nie nach Pace · LB Z2 (12%): 4,5–5,2 km/h · LB Z3 (16%+): 5,5–6,5 km/h · Stairmaster Z2: 60–80 Steps/min · Z3: 80–100 Steps/min · Race Day 1. Anstieg: max 87% HFmax = <strong>159 bpm</strong></p>
 
 <div style="margin-bottom:1.2rem;">
   <div class="hmbar-title">Höhenmeter-Progression (Zielwerte pro Woche)</div>
@@ -92,20 +92,21 @@ body{font-family:system-ui,sans-serif;background:#f8f7f4;color:#1a1a1a;padding:1
 <div class="ctrl" id="fctrl">
   <button class="cb act" data-f="all">Alle 21 Wochen</button>
   <button class="cb" data-f="aufbau">Aufbau (1–6)</button>
-  <button class="cb" data-f="pre">Pre-Peak (7–14)</button>
-  <button class="cb" data-f="peak">Peak (15–19)</button>
-  <button class="cb" data-f="taper">Taper + Race (20–22)</button>
+  <button class="cb" data-f="pre">Pre-Peak (7–13)</button>
+  <button class="cb" data-f="cruise">Cruise (14–15)</button>
+  <button class="cb" data-f="peak">Peak + Camp (16–19)</button>
+  <button class="cb" data-f="taper">Taper + Race (20–21)</button>
 </div>
 
 <div class="leg">
-  <div class="li"><div class="ld" style="background:#EAF3DE;"></div>Zone 2 Dauerlauf</div>
-  <div class="li"><div class="ld" style="background:#FAEEDA;"></div>Zone 3 / Intervall</div>
-  <div class="li"><div class="ld" style="background:#FAECE7;"></div>Zone 4 / Tempo</div>
-  <div class="li"><div class="ld" style="background:#EEEDFE;"></div>Krafttraining</div>
-  <div class="li"><div class="ld" style="background:#FBEAF0;"></div>Mobilität</div>
-  <div class="li"><div class="ld" style="background:#9FE1CB;"></div>Berg / Outdoor</div>
-  <div class="li"><div class="ld" style="background:#E6F1FB;"></div>Wettkampf / Test</div>
-  <div class="li"><div class="ld" style="background:#F1EFE8;"></div>Ruhetag</div>
+  <div class="li"><div class="ld" style="background:#b9da8c;"></div>Zone 2 Dauerlauf</div>
+  <div class="li"><div class="ld" style="background:#e8c277;"></div>Zone 3 / Intervall</div>
+  <div class="li"><div class="ld" style="background:#e8a07f;"></div>Zone 4 / Tempo</div>
+  <div class="li"><div class="ld" style="background:#b0a8e8;"></div>Krafttraining</div>
+  <div class="li"><div class="ld" style="background:#e89ab8;"></div>Mobilität</div>
+  <div class="li"><div class="ld" style="background:#6fd9b8;"></div>Berg / Outdoor</div>
+  <div class="li"><div class="ld" style="background:#8ab8e8;"></div>Wettkampf / Test</div>
+  <div class="li"><div class="ld" style="background:#b0aea4;"></div>Ruhetag</div>
 </div>
 
 <div id="plan"></div>
@@ -148,15 +149,15 @@ function updateProgress(wNr){
 
 function updateAllProgress(){weeks.forEach(w=>updateProgress(w.nr));}
 
-const Z1={bg:'#E1F5EE',tc:'#085041'};
-const Z2={bg:'#EAF3DE',tc:'#27500A'};
-const Z3={bg:'#FAEEDA',tc:'#633806'};
-const Z4={bg:'#FAECE7',tc:'#712B13'};
-const KR={bg:'#EEEDFE',tc:'#3C3489'};
-const MO={bg:'#FBEAF0',tc:'#72243E'};
-const RU={bg:'#F1EFE8',tc:'#444441'};
-const BE={bg:'#9FE1CB',tc:'#04342C'};
-const WK={bg:'#E6F1FB',tc:'#0C447C'};
+const Z1={bg:'#0e2b25',tc:'#7fd9bf'};
+const Z2={bg:'#1d2b10',tc:'#b9da8c'};
+const Z3={bg:'#2e2410',tc:'#e8c277'};
+const Z4={bg:'#2e1a12',tc:'#e8a07f'};
+const KR={bg:'#1c1933',tc:'#b0a8e8'};
+const MO={bg:'#2e1620',tc:'#e89ab8'};
+const RU={bg:'#222019',tc:'#b0aea4'};
+const BE={bg:'#0d2e26',tc:'#6fd9b8'};
+const WK={bg:'#122538',tc:'#8ab8e8'};
 function d(n,e,det,c){return{n,e,det,c};}
 
 const weeks=[
@@ -261,27 +262,27 @@ d('Fr','Mobilität','Vollroutine sanft\nSauna wenn möglich',MO),
 d('Sa','300 Hm LB locker','LB 10% · Zone 2\nHF 137–155 · sehr ruhig\n~50 min',Z2),
 d('So','1:30h Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30',Z2)
 ]},
-{nr:10,ph:'pre',dat:'15.–21.06.',tt:'Bergwochenende 2 (outdoor) — 2.800 Hm',zt:'~10:00h',lng:'4:00h',hm:2800,qu:3,
-note:'BERGWOCHENENDE 2. Kraft 1× Di (Sa+So+Mi+Do Berg — 2× wäre zu viel). Ziel: 2.800 Hm am Wochenende. Sa: 1.500 Hm · So: 1.300 Hm. Volles Wettkampf-Setup.',
+{nr:10,ph:'pre',dat:'15.–21.06.',tt:'Speed-Event + Hügel-Langlauf — ~2.500 Hm',zt:'~9:00h',lng:'~3:00h',hm:2500,qu:3,
+note:'Sa = 9-km-Flachlauf-EVENT (Wettkampf, schnell) statt Hügelreps. Zum Ausgleich Hm auf Mi (indoor, 800 Hm) und So-Langlauf (~1.600 Hm, lokale Hügel ≤1 h) verschoben. Berge/Hügel unter der Woche nicht möglich → Wochentags-Hm nur indoor. Das Event ist Speed-Qualität, kein Ziel-Wettkampf, daher kein Tapering davor.',
 days:[
-d('Mo','Anreise / Ruhe','Leichtes Stretching\nBeine schonen',RU),
+d('Mo','Mobilität','Couch Stretch + Pigeon Pose\nSchaumrolle Vollroutine\nHüftöffner + Waden\noptional 30 min locker Z1',MO),
 d('Di','Kraft B','Kniebeuge 4×8 schwer\nStep-Up mit Gewicht 3×12/S\nHip Thrust 4×12\nEinbeinige Wade 3×15\nDead Bug 3×10/S',KR),
-d('Mi','90 min Berg','Zone 2–3 · HF 137–166\nWechsel Laufen/Hiken\nStöcke · ~500 Hm',BE),
-d('Do','90 min Berg','Zone 2–3 · HF 137–166\nTechnisches Gelände\nDownhill-Technik üben\n~400 Hm',BE),
-d('Fr','Mobilität / Ruhe','Foam Rolling + Dehnen\nCouch Stretch + Pigeon Pose',MO),
-d('Sa','1.500 Hm — 3×500','Echter Berg · Zone 3\nHF 155–166 · Stöcke!\nWarm-Up 10 min Z2\n500 Hm Z3 bergauf\nPause: Abstieg Z2\n3 Wdh. = 1.500 Hm Total\nKH 50g/h',BE),
-d('So','4:00h Lauf/Hike','Zone 2 · HF 137–155\nVolle Wettkampfausrüstung\nBergauf hiken · bergab laufen\n~1.300 Hm · KH 50–60g/h',BE)
+d('Mi','800 Hm Indoor-Aufstieg','Höhenlaufband 16–18% · Zone 3\nHF 155–166\nWarm-Up 10 min Z2\n~800 Hm kontinuierlich\nStöcke wenn möglich\n(ersetzt Berg unter der Woche)',Z3),
+d('Do','60 min Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30\n5 Steigerungen à 100m am Ende',Z2),
+d('Fr','30 min locker + Mobilität','Zone 1 · HF bis 137\n4–5 kurze Steigerungen\nBeine frisch fürs Event',Z1),
+d('Sa','9 km Flachlauf-EVENT','Wettkampf · flach & schnell\nWarm-Up 15 min + Steigerungen\n9 km hart: Zone 4–5\n~10k-Renntempo\nCool-Down 10 min locker',WK),
+d('So','2:30–3:00h Hügel-Langlauf','~1.600 Hm · Zone 2 · HF 137–155\nGelände ≤1 h Fahrt (Alb-Trauf / Hesselberg)\nbergauf hiken · bergab laufen\nauf müden Beinen vom Event – ruhig!\nKH 50g/h · optional Dunkelstart m. Stirnlampe',BE)
 ]},
-{nr:11,ph:'pre',dat:'22.–28.06.',tt:'Bergwochenende 2 (outdoor) — 2.800 Hm',zt:'~10:00h',lng:'4:00h',hm:2800,qu:3,
-note:'BERGWOCHENENDE 2. Kraft 1× Di (Sa+So+Mi+Do Berg — 2× wäre zu viel). Ziel: 2.800 Hm am Wochenende! Sa: 1.500 Hm · So: 1.300 Hm. Volles Wettkampf-Setup.',
+{nr:11,ph:'pre',dat:'22.–28.06.',tt:'Entlastung + Indoor-Hm (kein Berg) — 2.000 Hm',zt:'~7:30h',lng:'2:30h',hm:2000,qu:2,
+note:'NEU ggü. v6 (dort war diese Woche versehentlich identisch zu Woche 10). Kein zweites Bergwochenende in Folge — spart 2×3 h Fahrt und schützt die Erholung. Moderate Indoor-Ladewoche als letzter Reiz vor dem Testlauf-2-Taper. Alle Hm am Stairmaster/LB.',
 days:[
-d('Mo','Anreise / Ruhe','Leichtes Stretching\nBeine schonen',RU),
-d('Di','Kraft B','Kniebeuge 4×8 schwer\nStep-Up mit Gewicht 3×12/S\nHip Thrust 4×12\nEinbeinige Wade 3×15\nDead Bug 3×10/S',KR),
-d('Mi','90 min Berg','Zone 2–3 · HF 137–166\nWechsel Laufen/Hiken\nStöcke · ~500 Hm',BE),
-d('Do','90 min Berg','Zone 2–3 · HF 137–166\nTechnisches Gelände\nDownhill-Technik üben\n~400 Hm',BE),
-d('Fr','Mobilität / Ruhe','Foam Rolling + Dehnen\nCouch Stretch + Pigeon Pose',MO),
-d('Sa','1.500 Hm — 3×500','Echter Berg · Zone 3\nHF 155–166 · Stöcke!\nWarm-Up 10 min Z2\n500 Hm Z3 bergauf\nPause: Abstieg Z2\n3 Wdh. = 1.500 Hm Total\nKH 50g/h',BE),
-d('So','4:00h Lauf/Hike','Zone 2 · HF 137–155\nVolle Wettkampfausrüstung\nBergauf hiken · bergab laufen\n~1.300 Hm · KH 50–60g/h',BE)
+d('Mo','Mobilität','Schaumrolle Vollroutine\nCouch Stretch + Pigeon Pose',MO),
+d('Di','Kraft B','Kniebeuge 3×10 schwer\nStep-Up hoch 3×12/S\nBulgarian Split 3×10/S\nHip Thrust 4×12\nDead Bug 3×10/S',KR),
+d('Mi','4×12 min Berginterv. Indoor','Stairmaster oder LB 15–20%\nZone 3 · HF 155–166\nWarm-Up 10 min Z2\n4×12 min Z3\nPause 6 min\nCool-Down 10 min · ~600 Hm',Z3),
+d('Do','75 min Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30\nLaufABC 5 min',Z2),
+d('Fr','Mobilität / Ruhe','Foam Rolling + Dehnen\nBeine locker',MO),
+d('Sa','800 Hm Steilhike Indoor','LB >18% oder Stairmaster\nZone 3 · HF 155–166\nWarm-Up 10 min\n~800 Hm kontinuierlich\nStöcke!\nCool-Down 10 min',Z3),
+d('So','2:30h Lauf/Hike','Zone 2 · HF 137–155\nLB leicht hügelig oder Trail\n~400 Hm · KH 50g/h',Z2)
 ]},
 {nr:12,ph:'pre',dat:'29.06.–05.07.',tt:'Pre-Race Woche → TESTLAUF 2 (Sa 04.07.)',zt:'~2h + Race',lng:'46 km Race',hm:2400,qu:1,
 note:'TESTLAUF 2 am Sa 04.07.: 46 km / 2.400 Hm! Woche stark reduziert. Kein Krafttraining. Pacing konservativ: HF bergauf max 155 bpm. Stöcke! Verpflegungsstrategie testen.',
@@ -305,44 +306,44 @@ d('Fr','Mobilität','Vollroutine sanft\nSauna empfohlen',MO),
 d('Sa','300 Hm LB locker','LB 10% · Zone 2\nHF 137–155 · sehr ruhig',Z2),
 d('So','1:30h Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30',Z2)
 ]},
-{nr:14,ph:'pre',dat:'13.–19.07.',tt:'Hm-Brücke — 2.500 Hm Indoor',zt:'~9:00h',lng:'3:30h',hm:2500,qu:3,
-note:'Hm-Brücke. Sehr hoher Hm-Umfang (Do: 1.200 Hm + Sa: 1.100 Hm) — Kraft 1× Di sinnvoll, zweite Einheit würde Erholung gefährden. Di: Kraft, Mi+Do: Hm-Schwerpunkt.',
+// ══ PEAK + CAMP Wochen 14–19 ═══════════════════════════════════════════════
+{nr:14,ph:'cruise',dat:'13.–19.07.',tt:'Cruise / Erhaltung — ~1.400 Hm (kein Peak)',zt:'~4:30h',lng:'~50 min',hm:1400,qu:1,
+note:'KREUZFAHRT 13.–25.07. → Erhaltungswoche, KEIN Peak. Mo + Di beide Anreise-/Reisetage ohne Training. Mi–So nur Höhenlaufband + Kraftgeräte (kein Stairmaster, kein Berg). Reine Erhaltung – Urlaub, kein Muskelkater. Höhenlaufband (12–15%) ist das wichtigste Werkzeug für bergspezifische Form.',
 days:[
-d('Mo','Mobilität','Schaumrolle Vollroutine\nHüftöffner + Waden',MO),
-d('Di','Kraft B','Kniebeuge 4×8 (max)\nStep-Up hoch 3×12/S\nBulgarian Split 4×10/S\nHip Thrust 4×12\nDead Bug 3×10/S',KR),
-d('Mi','90 min inkl. Downhill','60 min LB bergauf Z2\nHF 137–155 · LB 6%\n20 min Downhill Vollgas\nForststraße 5–10%\nQuadrizeps einrollen danach',Z2),
-d('Do','1.200 Hm LB Aufstieg','LB 16–18% oder Stairmaster\nZone 3 · HF 155–166\nWarm-Up 10 min Z2\n~1.200 Hm kontinuierlich\nStöcke!\nCool-Down 15 min',Z3),
-d('Fr','75 min Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30',Z2),
-d('Sa','1.100 Hm Steilhike','LB >18% oder Stairmaster\nZone 3 · HF 155–166\nWarm-Up 10 min\n4×20 min Z3\nPause 5 min\nStöcke!\n~1.100 Hm Equiv.',Z3),
-d('So','3:30h Lauf/Hike','Zone 2 · HF 137–155\nLB leicht hügelig oder Trail\nWechsel Laufen/Hiken\n~200 Hm · KH 50g/h',Z2)
+d('Mo','Anreise / Reisetag','kein Training\nBeine locker halten',RU),
+d('Di','Anreise / Einschiffung','kein Training\nleichtes Dehnen wenn möglich',RU),
+d('Mi','500 Hm Laufband-Hike','Höhenlaufband 12–15% · Zone 2–3\nHF 137–166 · ~45 min',Z3),
+d('Do','Kraft (Geräte)','Beinpresse 3×10\nKniebeuge-/Hack-Maschine 3×10\nBeinbeuger 3×12\nWadenmaschine 3×15\nGlute-/Hip-Thrust-Maschine 3×12\nCore — moderat',KR),
+d('Fr','400 Hm Laufband-Hike locker','Höhenlaufband 12% · Zone 2\nHF 137–155 · ~40 min',Z2),
+d('Sa','500 Hm Laufband-Hike','Höhenlaufband 12–15% · Zone 2\nHF 137–155 · ~45 min',Z2),
+d('So','Kraft (Geräte) leicht / Ruhe','2 Sätze moderat\noder Ruhetag – je nach Urlaubslust',KR)
 ]},
-// ══ PEAK Wochen 14–18 ══════════════════════════════════════════════════════
-{nr:15,ph:'peak',dat:'20.–26.07.',tt:'Peak-Anlauf — 3.000 Hm',zt:'~10:00h',lng:'4:00h',hm:3000,qu:4,
-note:'Erster Peak-Block. Hohe Hm + Bergwochenende Sa+So — Kraft 1× Di (mehr wäre kontraproduktiv). Di: Kraft, Mi: Downhill, Do: 1.000 Hm. Sa+So: je 1.500 Hm.',
+{nr:15,ph:'cruise',dat:'20.–26.07.',tt:'Cruise-Ende + Aktivierung — ~1.500 Hm (kein Peak)',zt:'~5:00h',lng:'~1:20h',hm:1500,qu:2,
+note:'Mo–Fr noch auf dem Schiff (Höhenlaufband + Geräte). Sa 25.07. Abreise-/Reisetag. So 26.07. zuhause = DOWNHILL-PRIMER auf lokalen Hügeln (≤1 h) — reaktiviert die Quads vor den Camp-Abstiegen (auf dem Laufband war kein Downhill möglich). Weiter kein Peak.',
 days:[
-d('Mo','Mobilität','Couch Stretch + Pigeon Pose\nSchaumrolle Vollroutine',MO),
-d('Di','Kraft B','Kniebeuge 4×8 (max)\nStep-Up hoch 3×12/S\nBulgarian Split 4×10/S\nHip Thrust 4×12\nDead Bug 3×10/S',KR),
-d('Mi','90 min inkl. Downhill','60 min LB bergauf Z2\nHF 137–155 · LB 6%\n20 min Downhill Vollgas\nForststraße 5–10%\nQuadrizeps einrollen',Z2),
-d('Do','1.000 Hm LB Aufstieg','LB 16–18% oder Stairmaster\nZone 3 · HF 155–166\nWarm-Up 10 min Z2\n~1.000 Hm kontinuierlich\nStöcke!\nCool-Down 15 min',Z3),
-d('Fr','Anreise Berg','Ausrüstung checken\nfrüh schlafen',RU),
-d('Sa','BERG: 1.500 Hm','Echter Berg · Zone 3\nHF 155–166 · Stöcke!\nWarm-Up 10 min Z2\n3×500 Hm Z3 bergauf\nPause: Abstieg Z2\nKH 50–60g/h',BE),
-d('So','4:00h Lauf/Hike','Zone 2 · HF 137–155\nVolle Wettkampfausrüstung\nBergauf hiken · bergab laufen\n~1.500 Hm · KH 50–60g/h\nExakt wie Wettkampf simulieren!',BE)
+d('Mo','500 Hm Laufband-Hike','Höhenlaufband 12–15% · Zone 2–3\nHF 137–166 · ~45 min',Z3),
+d('Di','Kraft (Geräte)','letzte Geräte-Einheit der Reise\nBeinpresse · Beinbeuger · Wade\nGlute-Maschine · Core\n2–3 Sätze moderat',KR),
+d('Mi','45 min locker Laufband','Zone 2 · HF 137–155\nflach · Beine locker',Z2),
+d('Do','400 Hm Laufband-Hike','Höhenlaufband 12% · Zone 2\nHF 137–155 · ~40 min',Z2),
+d('Fr','Mobilität / Ruhe','Foam Rolling + Dehnen\nAbreise vorbereiten',MO),
+d('Sa','Reisetag (25.07.)','Ruhe oder 20 min lockeres Auslaufen\nZone 1',RU),
+d('So','Downhill-Primer ~600–800 Hm','Lokale Hügel ≤1 h Fahrt\n60 min bergauf Zone 2 · HF 137–155\n20 min KONTROLLIERTER Downhill\n→ Quads reaktivieren vor Camp!\ndanach Quadrizeps einrollen',BE)
 ]},
-{nr:16,ph:'peak',dat:'27.07.–02.08.',tt:'Peak-Kern I — Pre-Camp (4.000 Hm)',zt:'~10:30h',lng:'35 km Camp',hm:4000,qu:4,
-note:'PEAK-WOCHE MIT CAMP-START. Kraft 1× Di (letzte volle Plan-B-Einheit — danach kein Max-Kraft mehr). Mi: Bergtempolauf, Do: 1.000 Hm. Fr–So: Camp Tage 1+2.',
+{nr:16,ph:'peak',dat:'27.07.–02.08.',tt:'Camp-Block I — Pre-Camp + Tag 1+2 (~4.400 Hm)',zt:'Camp-Woche',lng:'~28 km Camp',hm:4400,qu:3,
+note:'CAMP-START — das Herzstück des Plans. Wichtige Änderung ggü. v6: vor dem Camp FRISCH werden (Mi locker, Do Ruhe) statt 1.000 Hm. Camp jetzt ~2.200 Hm/Tag statt 3.000 — immer noch ein riesiger Block, aber regenerierbar. Di letzte volle Kraft B. Wenn das Camp in echte Höhe (>2.000 m) führt: bewusst langsamer, Höhe spüren (Renntag bis ~2.760 m!).',
 days:[
 d('Mo','Mobilität','Couch Stretch + Pigeon Pose\nSchaumrolle Vollroutine',MO),
 d('Di','Kraft B (letzte volle!)','Kniebeuge 4×8 (max!)\nBulgarian Split 4×10/S\nHip Thrust 4×12\nEinbeinige Wade 3×15\nDead Bug 3×10/S',KR),
-d('Mi','90 min Bergtempolauf','Zone 3 · HF 155–166\nLB 12–18%\nWarm-Up 10 min Z2\n75 min Z3\nCool-Down 15 min\n~500 Hm Equiv.',Z3),
-d('Do','1.000 Hm LB Aufstieg','LB 16–18% oder Stairmaster\nZone 3 · HF 155–166\nWarm-Up 10 min Z2\n~1.000 Hm kontinuierlich\nStöcke!\nCool-Down 15 min',Z3),
-d('Fr','Anreise Camp','Ausrüstung für 3 Tage!\nErnährung für Camp\nfrüh schlafen!!',RU),
-d('Sa','CAMP TAG 1: 35 km','3.000 Hm · Zone 1–2\nHF: 137–155\nBergauf: IMMER hiken (Stöcke!)\nBergab: kontrolliert laufen\nKH 50–60g/h · extrem konservativ!',BE),
-d('So','CAMP TAG 2: 35 km','3.000 Hm (vorermüdet!)\nZone 1–2 · HF max 155\nTempo egal – ankommen zählt!\nKH 60g/h · mehr gehen wenn nötig',BE)
+d('Mi','75 min Dauerlauf locker','Zone 2 · HF 137–155\nPace 7:30–8:30\nBeine schonen vor Camp',Z2),
+d('Do','Ruhe / Mobilität','Beine frisch fürs Camp!\nFoam Rolling sanft\nAusrüstung für 3 Tage packen',RU),
+d('Fr','Anreise Camp','Ernährung für 3 Tage\nStöcke + Stirnlampe\nfrüh schlafen!!',RU),
+d('Sa','CAMP TAG 1: ~28 km','~2.200 Hm · Zone 1–2\nHF 137–155\nBergauf: IMMER hiken (Stöcke!)\nBergab: kontrolliert laufen\nKH 50–60g/h · konservativ!',BE),
+d('So','CAMP TAG 2: ~28 km','~2.200 Hm (vorermüdet!)\nZone 1–2 · HF max 155\nTempo egal – ankommen zählt\nKH 60g/h · mehr gehen wenn nötig',BE)
 ]},
-{nr:17,ph:'peak',dat:'03.–09.08.',tt:'Camp Tag 3 + Regeneration (3.000 Hm)',zt:'Camp + ~3h',lng:'35 km Camp',hm:3000,qu:1,
-note:'CAMP TAG 3 (Mo) — letzte Camp-Einheit. TOTAL: 105 km / 9.000 Hm in 3 Tagen! Danach 5 Tage echte Regeneration. Massage, Schlaf, Protein 2g/kg KG.',
+{nr:17,ph:'peak',dat:'03.–09.08.',tt:'Camp Tag 3 + Regeneration (~2.500 Hm)',zt:'Camp + Reg.',lng:'~22 km Camp',hm:2500,qu:1,
+note:'CAMP TAG 3 (Mo) — letzte Camp-Einheit. 3-TAGES-TOTAL ~78 km / ~6.600 Hm. Das ist dein eigentlicher Peak! Danach 5 Tage echte Regeneration: Massage, Schlaf, Protein 2g/kg KG. KEINE zweite Höchstwoche danach (das war der Fehler in v6).',
 days:[
-d('Mo','CAMP TAG 3: 35 km','3.000 Hm (maximal vorermüdet!)\nZone 1–2 · HF bis 155\nKH 60g/h ab Minute 1\nmehr gehen wenn nötig\n→ TOTAL: 105 km / 9.000 Hm',BE),
+d('Mo','CAMP TAG 3: ~22 km','~2.200 Hm (maximal vorermüdet!)\nZone 1–2 · HF bis 155\nKH 60g/h ab Minute 1\nmehr gehen wenn nötig\n→ TOTAL ~78 km / ~6.600 Hm',BE),
 d('Di','Ruhetag','Beine hoch!\nFoam Rolling sanft\nMassage DRINGEND empfohlen',RU),
 d('Mi','Ruhetag','Beine hochlagern\nSauna wenn möglich\nProtein 2g/kg Körpergewicht!',RU),
 d('Do','20 min sehr locker','Zone 1 · HF bis 130\nnur wenn Beine ok\nPace 9:00+',Z1),
@@ -350,31 +351,31 @@ d('Fr','Mobilität','Vollroutine sanft\nSchaumrolle Waden + IT-Band',MO),
 d('Sa','45 min locker','Zone 1–2 · HF bis 150\nPace 8:30+',Z1),
 d('So','1:30h Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30\nlangsam in den Rhythmus',Z2)
 ]},
-{nr:18,ph:'peak',dat:'10.–16.08.',tt:'Peak-Kern II — Bergwochenende 4 (4.500 Hm)',zt:'~11:30h',lng:'5:00h',hm:4500,qu:4,
-note:'HÖCHSTE BELASTUNGSWOCHE. Kraft 1× Do (nur 2 Sätze — Sa+So je 2.000+ Hm machen 2× Kraft unmöglich). Di: Lauf/Hike, Mi: Intervalle, Do: Kraft leicht, Fr: Anreise.',
+{nr:18,ph:'peak',dat:'10.–16.08.',tt:'Letzter großer Reiz — 2.800 Hm',zt:'~9:00h',lng:'4:00h',hm:2800,qu:4,
+note:'GRÖSSTE STRUKTUR-KORREKTUR ggü. v6: dort standen hier 4.500 Hm DIREKT nach dem Camp — viel zu wenig Erholung, hohes Verletzungsrisiko. Da das Camp dein Peak ist, reicht jetzt ein normales Bergwochenende (~2.800 Hm). Kraft Do nur 2 Sätze. So-Lauf wieder mit Stirnlampe im Dunkeln starten.',
 days:[
 d('Mo','Mobilität','Schaumrolle Vollroutine\nHüftöffner + Waden',MO),
-d('Di','90 min Lauf/Hike','LB 12–15% · Zone 3\nHF 155–166\n5 min laufen / 5 min hiken\ngleiche Intensität halten\n~500 Hm Equiv.',Z3),
-d('Mi','3×20 min Intervalle','Zone 3 · HF 155–166\nPace 5:50–7:00\nWarm-Up 10 min Z2\n3×20 min Z3\nPause 5 min Trab\nCool-Down 10 min',Z3),
+d('Di','90 min Lauf/Hike','LB 12–15% · Zone 3\nHF 155–166\n5 min laufen / 5 min hiken\n~400 Hm Equiv.',Z3),
+d('Mi','3×20 min Intervalle','Zone 3 · HF 155–166\nPace 5:50–7:00\nWarm-Up 10 min Z2\n3×20 min Z3\nPause 5 min Trab\n~300 Hm',Z3),
 d('Do','Kraft B (2 Sätze)','Nur 2 Sätze — kein Muskelkater!\nKniebeuge 2×8\nStep-Up 2×10/S\nHip Thrust 2×12\nDead Bug 2×10/S',KR),
-d('Fr','Anreise Berg','Ausrüstung checken\nfrüh schlafen!',RU),
-d('Sa','BERG: 2.000–2.500 Hm','Echter Berg · Zone 3\nHF 155–166 · Stöcke!\nWarm-Up 10 min Z2\n3–4 Aufstiege à 600–800 Hm\nZ3 bergauf · Z2 Abstieg\nKH 50–60g/h',BE),
-d('So','5:00h Lauf/Hike','Zone 2 · HF 137–155\nVolle Wettkampfausrüstung!\nBergauf hiken (Stöcke!)\nBergab laufen · ~2.000 Hm\nKH 60g/h\nExakt Wettkampf simulieren!',BE)
+d('Fr','Anreise Berg','Ausrüstung checken\nStirnlampe!\nfrüh schlafen',RU),
+d('Sa','BERG: 1.200 Hm','Echter Berg · Zone 3\nHF 155–166 · Stöcke!\nWarm-Up 10 min Z2\n2–3 Aufstiege Z3 bergauf\nZ2 Abstieg\nKH 50–60g/h',BE),
+d('So','4:00h Lauf/Hike — Dunkelstart','VOR Sonnenaufgang starten!\nStirnlampe · Zone 2 · HF 137–155\nBergauf hiken (Stöcke!)\nBergab laufen · ~900 Hm\nKH 60g/h · Wettkampf simulieren',BE)
 ]},
-{nr:19,ph:'peak',dat:'17.–23.08.',tt:'Letzte Belastung + Tapering-Übergang (3.000 Hm)',zt:'~9:30h',lng:'3:30h',hm:3000,qu:3,
-note:'Letzte echte Belastungswoche. Kraft 1× Do (2 Sätze — Hm und Bergeinheiten lassen mehr nicht zu). Di: letzter Downhill-Reiz. Mi: 1.000 Hm. Sa: 1.500 Hm Intervalle.',
+{nr:19,ph:'peak',dat:'17.–23.08.',tt:'Letzte Belastung + Taper-Übergang — 2.500 Hm',zt:'~8:30h',lng:'3:30h',hm:2500,qu:3,
+note:'Letzte echte Belastungswoche, ggü. v6 leicht reduziert (war 3.000). Di letzter Downhill-Reiz (technisch — simuliert den Renn-Finale-Downhill nach Mayrhofen). Kraft Do 2 Sätze. Danach Taper.',
 days:[
 d('Mo','Mobilität','Couch Stretch + Pigeon Pose\nSchaumrolle Vollroutine',MO),
-d('Di','90 min inkl. Downhill (letztes Mal!)','60 min LB bergauf Z2\nHF 137–155 · LB 6%\n20 min Downhill Vollgas\n→ LETZTER DOWNHILL-REIZ!\nQuadrizeps einrollen',Z2),
-d('Mi','1.000 Hm LB Aufstieg','LB 15%+ oder Stairmaster\nZone 3 · HF 155–166\nWarm-Up 10 min\n~1.000 Hm Z3 kontinuierlich\nStöcke!\nCool-Down 15 min',Z3),
+d('Di','90 min inkl. Downhill (letztes Mal!)','60 min LB/Forststraße bergauf Z2\nHF 137–155\n20 min technischer Downhill\n→ LETZTER DOWNHILL-REIZ!\nQuadrizeps einrollen · ~300 Hm',Z2),
+d('Mi','800 Hm LB Aufstieg','LB 15%+ oder Stairmaster\nZone 3 · HF 155–166\nWarm-Up 10 min\n~800 Hm Z3 kontinuierlich\nStöcke!',Z3),
 d('Do','Kraft B (2 Sätze)','Nur 2 Sätze!\nKniebeuge 2×8\nStep-Up 2×10/S\nHip Thrust 2×12\nDead Bug 2×10/S',KR),
 d('Fr','75 min Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30',Z2),
-d('Sa','3×500 Hm Berginterv.','LB 15%+ oder echter Berg\nZone 3 · HF 155–166\nWarm-Up 10 min Z2\n500 Hm Z3 bergauf\nPause: Abstieg / 15 min Z2\n3 Wdh. = 1.500 Hm\nCool-Down 15 min · Stöcke!',Z3),
-d('So','3:30h Lauf/Hike','Zone 2 · HF 137–155\nLB oder Natur · ~500 Hm\nWettkampfausrüstung\nKH 50–60g/h\nMayrhofen-Flachpassagen simulieren',Z2)
+d('Sa','2×500 Hm Berginterv.','LB 15%+ oder echter Berg\nZone 3 · HF 155–166\nWarm-Up 10 min Z2\n500 Hm Z3 bergauf\nPause: Abstieg / 15 min Z2\n2 Wdh. = 1.000 Hm\nCool-Down 15 min · Stöcke!',Z3),
+d('So','3:30h Lauf/Hike','Zone 2 · HF 137–155\nLB oder Natur · ~400 Hm\nWettkampfausrüstung\nKH 50–60g/h\nFlachpassagen simulieren',Z2)
 ]},
-// ══ TAPER + RACE Wochen 19–21 ══════════════════════════════════════════════
-{nr:20,ph:'taper',dat:'24.–30.08.',tt:'Taper Woche 1 — Umfang –35%',zt:'~7:30h',lng:'2:30h',hm:1000,qu:2,
-note:'TAPER BEGINNT. Kraft 1× Do (2 Sätze — reicht zur Muskelerhaltung, mehr wäre kontraproduktiv). Umfang –35%, Intensität bleibt. Physio + Sauna. Nicht in Panik!',
+// ══ TAPER + RACE Wochen 20–21 ══════════════════════════════════════════════
+{nr:20,ph:'taper',dat:'24.–30.08.',tt:'Taper Woche 1 — Umfang –35%',zt:'~7:00h',lng:'2:30h',hm:1000,qu:2,
+note:'TAPER BEGINNT. Umfang –35%, Intensität bleibt erhalten. Kraft Do 2 Sätze (Muskelerhalt). Physio + Sauna. Nicht in Panik geraten, wenn die Beine sich schwer anfühlen – das ist normal!',
 days:[
 d('Mo','Mobilität','Vollroutine 20 min\nPhysio empfohlen\nSchaumrolle + Dehnen',MO),
 d('Di','75 min Lauf/Hike','LB 12% · Zone 3\nHF 155–166\n5 min laufen / 5 min hiken\n~350 Hm Equiv.',Z3),
@@ -384,45 +385,34 @@ d('Fr','60 min Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30',Z2),
 d('Sa','500 Hm LB','LB 12–15% · Zone 3\nHF 155–166\nWarm-Up 10 min · ~500 Hm\nCool-Down 10 min · Stöcke',Z3),
 d('So','2:30h Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30\nflach – Muskelerinnerung',Z2)
 ]},
-{nr:21,ph:'taper',dat:'31.08.–05.09.',tt:'Taper Woche 2 — Umfang –55%',zt:'~5:00h',lng:'1:30h',hm:400,qu:2,
-note:'Tiefes Taper. Umfang –55%. Wenn Beine schwer wirken – normal! Strecke Mayrhofen mental durchgehen. Pacing verinnerlichen. Ausrüstung final packen.',
-days:[
-d('Mo','Mobilität','Vollroutine · Physio\nSauna empfohlen',MO),
-d('Di','60 min Lauf/Hike','LB 12% · Zone 3\nHF 155–166\n5 min laufen / 5 min hiken\n~250 Hm · locker und flüssig',Z3),
-d('Mi','45 min locker','Zone 2 · HF 137–155\nPace 7:30–8:30\nLaufABC 5 min',Z2),
-d('Do','Ruhe / Mobilität','15 min Yoga\nkein Krafttraining!',MO),
-d('Fr','45 min locker','Zone 1–2 · HF bis 150\nPace 8:00+\nBeine frisch halten',Z1),
-d('Sa','6×1 km Wechsellauf','Im Wechsel Zone 2 / Zone 3\nLB 4% · ~45 min\nHF 137–166\n~150 Hm Equiv.',Z3),
-d('So','1:30h Dauerlauf','Zone 2 · HF 137–155\nPace 7:00–8:30\nletzte ruhige Einheit!',Z2)
-]},
-{nr:22,ph:'taper',dat:'05.09. → RACE DAY',tt:'Race Week — MAYRHOFEN ULTRAKS',zt:'~2h + Race',lng:'70 km RACE',hm:4500,qu:0,
-note:'RENNWOCHE. Kein Training hilft mehr. Ruhe, Schlaf, Visualisierung. Race Day: 1. Anstieg MAX 159 bpm (87% HFmax). Flachpassagen MAX 154 bpm. KH 50–60g/h ab Minute 1. STÖCKE!',
+{nr:21,ph:'taper',dat:'31.08.–06.09.',tt:'Race Week — MAYRHOFEN ULTRAKS (Sa 05.09.)',zt:'Taper + Race',lng:'70 km RACE',hm:4270,qu:1,
+note:'RENNWOCHE (vereint tiefes Taper + Renntag — in v6 waren das fehlerhaft zwei sich überlappende Wochen). Umfang stark runter, Beine frisch machen. Der TUX070 startet Sa 05.09. um 05:30 Uhr am Parkplatz Hintertux (Shuttle ab Mayrhofen!), erster Anstieg zur Frauenwand im DUNKELN mit Stirnlampe. Renntag: 1. Anstieg MAX 159 bpm, Flachpassagen MAX 154 bpm, KH 50–60g/h ab Minute 1. STÖCKE!',
 days:[
 d('Mo','6×1 km Wechsellauf','Im Wechsel Zone 2 / Zone 3\nLB 4% · ~45 min\nBeine aufwecken',Z3),
 d('Di','60 min locker','Zone 2 · HF 137–155\nPace 7:30–8:30\nLaufABC 5 min',Z2),
-d('Mi','30 min Regen.lauf','Zone 1 · HF bis 137\nPace 9:00+\n5 Steigerungen à 100m\nAusrüstung final checken!',Z1),
-d('Do','Ruhetag','Anreise Mayrhofen\nStartnummer abholen\nfrüh schlafen!',RU),
-d('Fr','Ruhetag','leichter Spaziergang 20 min\nHigh Carb Tag!\n5 kurze Steigerungen\nVisualisierung: Anstieg 1 + 2',RU),
-d('Sa','MAYRHOFEN ULTRAKS','70 km / 4.500 Hm\n1. Anstieg: MAX 159 bpm!\nFlachpassagen: MAX 154 bpm\nKH: 50–60g/h ab Minute 1\nTrinken: 200 ml alle 20 min\nVP-Stopps: max 2 min\nSTÖCKE! DU SCHAFFST DAS!',WK),
+d('Mi','30 min Regen.lauf','Zone 1 · HF bis 137\nPace 9:00+\n5 Steigerungen à 100m\nAusrüstung + STIRNLAMPE checken!',Z1),
+d('Do','Ruhetag — Anreise','Anreise Mayrhofen\nStartnummer abholen\nShuttle-/Startinfos prüfen\nfrüh schlafen!',RU),
+d('Fr','Ruhetag — Race Eve','leichter Spaziergang 20 min\nHigh Carb Tag!\n5 kurze Steigerungen\nStirnlampe + Stöcke bereitlegen\nVisualisierung: Anstieg 1 im Dunkeln',RU),
+d('Sa','MAYRHOFEN ULTRAKS — TUX070','70 km / ~4.270 Hm · Start 05:30 Hintertux\n1. Anstieg im Dunkeln: STIRNLAMPE\nHF 1. Anstieg: MAX 159 bpm!\nFlachpassagen: MAX 154 bpm\nKH 50–60g/h ab Minute 1\nTrinken 200 ml/20 min · VP max 2 min\nSTÖCKE! Höhe bis ~2.760 m\ntechnischer Downhill ins Ziel Mayrhofen\nDU SCHAFFST DAS!',WK),
 d('So','Verdient feiern!','Beine hoch\nviel essen + trinken\nFoam Rolling sanft',RU)
 ]},
 ];
 
 // Hm Balkendiagramm
-const phColors={aufbau:'#C0DD97',pre:'#FAC775',peak:'#F09595',taper:'#85B7EB'};
-const phTColors={aufbau:'#27500A',pre:'#633806',peak:'#712B13',taper:'#0C447C'};
+const phColors={aufbau:'#C0DD97',pre:'#FAC775',cruise:'#7FC6C6',peak:'#F09595',taper:'#85B7EB'};
+const phTColors={aufbau:'#b9da8c',pre:'#e8c277',cruise:'#7fcaca',peak:'#e8a07f',taper:'#8ab8e8'};
 const maxHm=Math.max(...weeks.map(w=>w.hm));
 document.getElementById('hmchart').innerHTML=weeks.map(w=>`
   <div class="hmrow">
-    <div class="hmlabel" style="color:${phTColors[w.ph]};">KW${w.nr} ${w.ph==='aufbau'?'Aufb.':w.ph==='pre'?'Pre':w.ph==='peak'?'Peak':'Taper'}</div>
+    <div class="hmlabel" style="color:${phTColors[w.ph]};">KW${w.nr} ${w.ph==='aufbau'?'Aufb.':w.ph==='pre'?'Pre':w.ph==='cruise'?'Cruise':w.ph==='peak'?'Peak':'Taper'}</div>
     <div class="hmfill" style="width:${Math.round(w.hm/maxHm*260)}px;background:${phColors[w.ph]};border:1px solid ${phTColors[w.ph]};"></div>
     <div class="hmval" style="color:${phTColors[w.ph]};">${w.hm>=1000?(w.hm/1000).toFixed(1)+'k':w.hm} Hm</div>
   </div>`).join('');
 
 // Wochendarstellung
-function pN(p){return{aufbau:'Aufbau',pre:'Pre-Peak',peak:'Peak',taper:'Taper'}[p];}
-function pBg(p){return{aufbau:'#EAF3DE',pre:'#FAEEDA',peak:'#FAECE7',taper:'#E6F1FB'}[p];}
-function pTc(p){return{aufbau:'#27500A',pre:'#633806',peak:'#712B13',taper:'#0C447C'}[p];}
+function pN(p){return{aufbau:'Aufbau',pre:'Pre-Peak',cruise:'Cruise',peak:'Peak',taper:'Taper'}[p];}
+function pBg(p){return{aufbau:'#1d2b10',pre:'#2e2410',cruise:'#0e2b28',peak:'#2e1a12',taper:'#122538'}[p];}
+function pTc(p){return{aufbau:'#b9da8c',pre:'#e8c277',cruise:'#7fcaca',peak:'#e8a07f',taper:'#8ab8e8'}[p];}
 
 function buildW(w){
   const dh=w.days.map((x,i)=>{
@@ -460,15 +450,33 @@ function buildW(w){
   </div>`;
 }
 
+// Aktuelle Trainingswoche aus dem heutigen Datum bestimmen
+// Plan startet Mo 13.04.2026 (Woche 1), jede Woche Mo–So
+const PLAN_START=new Date(2026,3,13);
+function currentWeekNr(){
+  const today=new Date();today.setHours(0,0,0,0);
+  const firstNr=weeks[0].nr,lastNr=weeks[weeks.length-1].nr;
+  const diffDays=Math.floor((today-PLAN_START)/86400000);
+  if(diffDays<0)return firstNr;            // vor Planstart → erste Woche
+  const wk=Math.floor(diffDays/7)+1;
+  if(wk>lastNr)return lastNr;              // nach Planende → letzte Woche
+  return wk;
+}
+
 function render(f){
   const fw=f==='all'?weeks:weeks.filter(w=>{
     if(f==='aufbau')return w.nr<=6;
-    if(f==='pre')return w.nr>=7&&w.nr<=14;
-    if(f==='peak')return w.nr>=15&&w.nr<=19;
+    if(f==='pre')return w.nr>=7&&w.nr<=13;
+    if(f==='cruise')return w.nr>=14&&w.nr<=15;
+    if(f==='peak')return w.nr>=16&&w.nr<=19;
     if(f==='taper')return w.nr>=20;
   });
   document.getElementById('plan').innerHTML=fw.map(buildW).join('');
-  if(fw.length)tw(fw[0].nr);
+  if(fw.length){
+    const cw=currentWeekNr();
+    // aktuelle Woche öffnen, falls sie im aktiven Filter liegt – sonst erste Woche
+    tw(fw.some(w=>w.nr===cw)?cw:fw[0].nr);
+  }
   updateAllProgress();
 }
 
@@ -490,6 +498,13 @@ document.getElementById('fctrl').addEventListener('click',e=>{
 });
 
 render('all');
+
+// Beim Laden direkt zur aktuellen Woche scrollen
+setTimeout(function(){
+  const cw=currentWeekNr();
+  const el=document.querySelector('.wb[data-nr="'+cw+'"]');
+  if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
+},80);
 </script>
 </body>
 </html>
